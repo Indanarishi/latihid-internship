@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatihID</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <ul class="links">
+                <li><a href="#">Program <i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#">Artikel</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kolaborasi</a></li>
+                <li><a href="#">Bantuan <i class="fas fa-angle-down"></i></a></li>
+            </ul>
+            <a href="#" class="login">Masuk</a>
+            <a href="#" class="register"><button class="register">Daftar</button></a>
+        </div>
+    </header>
+
+    <div class="landing">
+        <div class="pagenav">
+            <p>Home <i class="fas fa-angle-right"></i> <span style="color: #FC8047;">Kolaborasi</span></p>
+        </div>
+        <div class="landingtext" data-aos="fade-right">
+            <h1>Ayo Kolaborasi</h1>
+            <h3>Mari beri kontribusi terbaik dalam meningkatkan kualitas sumber daya manusia Indonesia dalam mengembangkan UMKM dengan menjadi <span>Mitra LatihID</span></h3>
+        </div>
+        <div class="landingimage" data-aos="fade-left">
+            <img src="./img/teams.png" alt="">
+        </div>
+    </div>
+
+    <div class="benefit">
+        <div class="abouttext" data-aos="fade-left">
+            <h3>Keuntungan Menjadi Mitra Kami</h3>
+        </div>
+        <div class="benefit-icon">
+            <ul>
+                <li><i class="far fa-id-card" data-aos="fade-up"></i><h4 data-aos="fade-up">Jejaring Bisnis</h4><p data-aos="fade-up">Kesempatan untuk menjangkau <span style="color: #FC8047; font-weight: bold;">865</span> pengguna kami.</p></li>
+                <li><i class="fas fa-money-check-alt" data-aos="fade-up"></i><h4 data-aos="fade-up">Insentif</h4><p data-aos="fade-up">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, alias.</p></li>
+                <li><i class="fas fa-laptop-house" data-aos="fade-up"></i><h4 data-aos="fade-up">Pengalaman</h4><p data-aos="fade-up">Berbagi cerita, motivasi, dan pengalaman menarik degnan menjadi pembicara pada LatihID Talks maupun PETA</p></li>
+                <li><i class="fas fa-award" data-aos="fade-up"></i><h4 data-aos="fade-up">Sertifikat</h4><p data-aos="fade-up">Dokumentasi sebagai pembicara dalam acara LatihID</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="aboutcard" data-aos="fade-up">
+        <h3>Jenis - Jenis Kemitraan</h3>
+    </div>
+    <div class="card">
+        <div class="card-content" data-aos="fade-right">
+            <div class="card-icon">
+                <img src="./img/icon1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Pemateri Modul</h3>
+                <p>Individu/Lembaga bermitra sebagai instruktur atau pemateri di latihID Modul, dengan menyediakan beberapa courses di dalam satu modul pembelajaran.</p>
+            </div>
+        </div>
+        <div class="card-content" data-aos="fade-right">
+            <div class="card-icon">
+                <img src="./img/icon2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Pembicara Talks</h3>
+                <p>Individu/Lembaga bermitra sebagai instruktur atau pemateri di latihID Talks, yang membahas topik seputar UMKM melalui webinar live atau tatap muka yang interaktif.</p>
+            </div>
+        </div>
+        <div class="card-content" data-aos="fade-left">
+            <div class="card-icon">
+                <img src="./img/icon3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Pembicara PETA</h3>
+                <p>Individu/Lembaga bermitra sebagai instruktur atau pemateri di latihID PETA, yang menceritakan pengalaman tentang UMKM dalam video singkat.</p>
+            </div>
+        </div>
+        <div class="card-content" data-aos="fade-left">
+            <div class="card-icon">
+                <img src="./img/icon4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Materi Lainnya</h3>
+                <p>Individu/Lembaga dapat mengajukan berbagai jenis kemitraan lainnya, seperti Media partner.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="aboutcontact" data-aos="fade-up">
+            <h3>Ayo Kolaborasi</h3>
+            <p>Silahkan isi dan lengkapi data berikut ini. LatihID akan segera<br>menghubungi Anda!</p>
+            <hr>
+        </div>
+        <div class="contactbox" data-aos="fade-up">
+            <form>
+                <div class="input-row">
+                    <div class="input-column">
+                        <div class="input-group">
+                            <label class="label">Kerja Sama yang Diinginkan <span style="color: red;">*</span></label><br>
+                            <select id="select" class="select"></select>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Nama <span style="color: red;">*</span></label><br>
+                            <input type="text" class="text">
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Email <span style="color: red;">*</span></label><br>
+                            <input type="text" class="text">
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Telepon <span style="color: red;">*</span></label><br>
+                            <input type="text" class="text">
+                        </div>
+                    </div>
+                    <div class="input-column">
+                        <div class="input-group">
+                            <label class="label">Upload CV <span style="color: red;">*</span></label><br>
+                            <input type="file" class="file">
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Upload Portofolio atau Proposal Kerjasama</label>
+                            <input type="file" class="file">
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Topik yang Diajukan <span style="color: red;">*</span></label>
+                            <textarea id="subject" style="width: 497px; height:104px"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class="register">Kirim</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

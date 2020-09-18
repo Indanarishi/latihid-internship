@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    position: fixed;
+    width: 1394px;
+    height: 60px;
+    left: calc(50% - 1440px/2);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
+    align-items: center;
+    padding: 30px 11%;
+    background: #fff;
+}
+.nav.sticky {
+    z-index: 1;
+    box-shadow: 0px 2px 2px 2px rgba(224, 224, 224, 0.25);
+}
+.logo {
+    position: relative;
+    cursor: pointer;
+}
+.links {
+    position: relative;
+    display: flex;
+    list-style: none;
+    padding-right: 250px;
+}
+.links li {
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px;
+}
+.links li a {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.links li a:hover {
+    color:#FC8047;
+}
+.login {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FC8047;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.login:hover {
+    color:  #ca4c12;
+}
+button {
+    position: relative;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+    background-color: #FC8047;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: #ca4c12;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 43px 0 128px;
+    height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url(./img/bg.png);
+    background-position: center;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+}
+.pagenav{
+    position: absolute;
+    top: 115px;
+    left: 101px;
+}
+.pagenav p {
+    font-size: 14px;
+    line-height: 16px;
+}
+.landingtext h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 60px;
+}
+.landingtext h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #393939;
+}
+.landingtext h3 span {
+    font-weight:bold;
+    color: #6ab7c9;
+}
+.landingimage img {
+    width: 648px;
+    height: 432px;
+}
+.benefit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 43px 0 128px;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 80vh;
+    background-image: url(./img/Vector\ 12.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.benefit h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 400px;
+}
+.benefit-icon ul {
+    position: absolute;
+    left: 55%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.benefit-icon ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+.benefit-icon ul li:nth-child(1){
+    padding-top: 110px;
+}
+.benefit-icon ul li:nth-child(2){
+    padding-top: 0;
+}
+.benefit-icon ul li:nth-child(3){
+    padding-top: 80px;
+}
+.benefit-icon ul li:nth-child(4){
+    padding-top: 10px;
+}
+.benefit-icon ul li + li {
+    padding-left: 1.5em;
+}
+.benefit-icon ul li .fas, .far {
+    font-size: 40px;
+    line-height: 75px;
+    transition: .6s;
+    color: #6ab7c9;
+}
+.benefit-icon ul li i {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .6s;
+    background: #FAFAFA;
+    box-shadow: 0px 5px 25px rgba(15, 132, 159, 0.2);
+}
+.benefit-icon ul li i:hover {
+    transform: translate(0, 10px);
+}
+.benefit-icon ul li h4 {
+    padding-right: 170px;
+    display: inline;
+    font-size: 18px;
+    height: 10px;
+}
+.benefit-icon ul li p {
+    font-size: 15px;
+}
+.aboutcard{
+    display: flex;
+    position: absolute;
+    left: 41%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.aboutcard h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 36px 0 100px;
+    padding-top: 70px;
+    font-family: 'Nunito', sans-serif;
+}
+.card .card-content {
+    position: relative;
+    width: 294px;
+    height: 320px;
+    margin: 25px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+}
+.card .card {
+    padding-left: 50px;
+}
+.card .card-content .card-icon {
+    padding: 31px 17px;
+}
+.card .card-content .content {
+    position: relative;
+    bottom: 35px;
+}
+.card .card-content .content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+.card .card-content .content p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.aboutcontact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 34%;
+    padding-top: 62px;
+    font-family: 'Nunito', sans-serif;
+}
+.aboutcontact h3 {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.aboutcontact p {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 24px;
+    align-items: flex-end;
+    text-align: center;
+}
+.aboutcontact hr {
+    width: 500px;
+    background: #E0E0E0;
+    opacity: 0.15;
+    border: 1px solid #000000;
+}
+
+.contactbox {
+    padding: 250px 200px;
+    font-family: 'Nunito', sans-serif;
+}
+.input-row {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+.input-column {
+    flex: 50%;
+    padding-left: 76px;
+}
+.input-column .input-group .file {
+    font-size: 16px;
+    font-weight: normal;
+    background: #fff;
+    border-radius: 3px;
+    outline: none;
+}
+.input-column .input-group .file::-webkit-file-upload-button {
+    color: #393939;
+    background: #fff;
+    padding: 6px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+    outline: none;
+    transition: 0.5s;
+}
+.input-column .input-group .file::-webkit-file-upload-button:hover {
+    background: rgb(233, 233, 233);
+}
+.input-column + .input-column {
+    padding-left: 76px;
+}
+.input-group + .input-group {
+    padding-bottom: 10px;
+}
+.input-group select, .text {
+    width: 400px;
+    height: 30px;
+    padding-bottom: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+form {
+    padding-bottom: 64px;
+}
+.contactbox button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 49%;
+    padding: 8px 37px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    background-color: #FC8047;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.contactbox button:hover {
+    background-color: #ca4c12;
+}
+
+@media (max-width: 991px){
+    .nav {
+        padding: 30px 10%;
+    }
+    .landing {
+        display: flex;
+        padding: 0 100px 0 209px;
+        padding-top: 161px;
+    }
+    .landingtext h1 {
+        padding-top: 90px;
+    }
+    .benefit h3 {
+        padding-top: 500px;
+        padding-left: 250px;
+    }
+    .benefit-icon {
+        padding-top: 100px;
+    }
+}
